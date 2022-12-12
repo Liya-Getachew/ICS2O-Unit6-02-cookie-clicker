@@ -19,14 +19,11 @@ if (navigator.serviceWorker) {
  * This function counts points for each click.
  */
 function cookieClicked() {
-
   if (localStorage.clicks) {
-    localStorage.clicks = Number(localStorage.clicks) +1
+    localStorage.clicks = Number(localStorage.clicks) + 1
   } else {
     localStorage.clicks = 0
   }
-  
+
   document.getElementById("points").innerHTML = "Points: " + localStorage.clicks
 }
-
-
