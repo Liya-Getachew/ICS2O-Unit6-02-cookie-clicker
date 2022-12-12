@@ -16,8 +16,17 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function counts points for each click.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function cookieClicked() {
+
+  if (localStorage.clicks) {
+    localStorage.clicks = Number(localStorage.clicks) +1
+  } else {
+    localStorage.clicks = 0
+  }
+  
+  document.getElementById("points").innerHTML = "Points: " + localStorage.clicks
 }
+
+
