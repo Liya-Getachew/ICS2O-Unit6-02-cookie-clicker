@@ -18,21 +18,18 @@ if (navigator.serviceWorker) {
 /**
  * This function counts points for each click.
  */
+function cookieClicked() {
+  localStorage.clicks++
+  document.getElementById("points").innerHTML =
+    "Cookies collected: " + localStorage.clicks
+}
+
 function updateCookieClicker() {
   if (localStorage.clicks) {
-    document.getElementById("points").innerHTML =
-      "Cookies collected: " + localStorage.clicks
+    localStorage.clicks = Number(localStorage.clicks)
   } else {
     localStorage.clicks = 0
   }
-}
 
-/**
- * This function counts points for each click.
- */
-function cookieClicked() {
-  localStorage.clicks++
-
-  document.getElementById("points").innerHTML =
-    "Cookies collected: " + localStorage.clicks
+  document.getElementById("points").innerHTML = "Cookies collected: " + localStorage.clicks
 }
