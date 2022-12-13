@@ -27,3 +27,7 @@ function cookieClicked() {
 
   document.getElementById("points").innerHTML = "Points: " + localStorage.clicks
 }
+
+function updateCookieClicker() {
+  document.getElementById("points").innerHTML = "Points: " + localStorage.clicks
+}
