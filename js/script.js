@@ -33,5 +33,6 @@ function updateCookieClicker() {
 function cookieClicked() {
   localStorage.clicks++
 
-  document.getElementById("points").innerHTML = "cookies collected " + localStorage.clicks
+  document.getElementById("points").innerHTML =
+    "cookies collected " + localStorage.clicks
 }
