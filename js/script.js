@@ -19,7 +19,7 @@ if (navigator.serviceWorker) {
  * This function counts points for each click.
  */
 function updateCookieClicker() {
-   if (localStorage.clicks) {
+  if (localStorage.clicks) {
     localStorage.clicks = Number(localStorage.clicks) + 1
   } else {
     localStorage.clicks = 0
