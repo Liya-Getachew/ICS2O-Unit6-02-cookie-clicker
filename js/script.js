@@ -18,8 +18,8 @@ if (navigator.serviceWorker) {
 /**
  * This function counts points for each click.
  */
-function cookieClicked() {
-  if (localStorage.clicks) {
+function updateCookieClicker() {
+   if (localStorage.clicks) {
     localStorage.clicks = Number(localStorage.clicks) + 1
   } else {
     localStorage.clicks = 0
@@ -28,6 +28,11 @@ function cookieClicked() {
   document.getElementById("points").innerHTML = "Points: " + localStorage.clicks
 }
 
-function updateCookieClicker() {
+/**
+ * This function counts points for each click.
+ */
+function cookieClicked() {
+  localStorage.clicks++
+
   document.getElementById("points").innerHTML = "Points: " + localStorage.clicks
 }
