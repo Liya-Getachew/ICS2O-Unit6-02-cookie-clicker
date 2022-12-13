@@ -20,8 +20,7 @@ if (navigator.serviceWorker) {
  */
 function updateCookieClicker() {
   if (localStorage.clicks) {
-    document.getElementById("points").innerHTML =
-      "cookies collected: " + localStorage.clicks
+    document.getElementById("points").innerHTML = "Cookies collected: " + localStorage.clicks
   } else {
     localStorage.clicks = 0
   }
@@ -34,5 +33,5 @@ function cookieClicked() {
   localStorage.clicks++
 
   document.getElementById("points").innerHTML =
-    "cookies collected " + localStorage.clicks
+    "Cookies collected: " + localStorage.clicks
 }
