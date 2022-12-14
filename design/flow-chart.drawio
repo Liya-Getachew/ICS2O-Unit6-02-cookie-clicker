@@ -1,17 +1,94 @@
 <mxfile host="65bd71144e">
     <diagram id="GInHtZuMB5CcCfA9ihm7" name="Page-1">
-        <mxGraphModel dx="594" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="520" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="13" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="300" y="260" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="300" y="700" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="300" y="740" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="\\" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="285" y="390" width="130" height="120" as="geometry"/>
+                <mxCell id="15" style="edgeStyle=none;html=1;entryX=0.453;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="12" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="if&lt;br&gt;(localStorage.clicks)&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="285" y="350" width="130" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="14" target="40">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="localStorage.clicks&lt;br&gt;=&lt;br&gt;Number(localStorage.clicks)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="510" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.438;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="18" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="localStorage.clicks&lt;br&gt;=&lt;br&gt;0" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="360" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="460" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="380" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.563;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="24" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="localStorage.clicks++" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="350" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="26" target="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="150" y="600"/>
+                            <mxPoint x="150" y="600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="&quot;Cookies collected: &quot; +&lt;br&gt;localStorage.clicks" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="500" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="29" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="530" y="740"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="&quot;Cookies collected: &quot; +&lt;br&gt;localStorage.clicks" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="550" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="34" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="260" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="630" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="cookieClicked function" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="230" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="updateCookieClicker function" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="265" y="230" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="40">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="355" y="740" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="&quot;Cookies collected: &quot; +&lt;br&gt;localStorage.clicks" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+                    <mxGeometry x="275" y="640" width="160" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
